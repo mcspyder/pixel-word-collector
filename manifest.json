@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Word Collector",
+  "version": "1.0",
+  "description": "Save selected words with right-click, manage them, and export as a text file.",
+  "permissions": [
+    "storage",
+    "contextMenus"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+}
